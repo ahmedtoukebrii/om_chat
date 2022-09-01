@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="chat_action" model="ir.action.act_window">
+        <field name="name">chatbot</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">chat.chatbot</field>
+        <field name="view_model">tree,kanban,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+            </p>
+        </field>
+    </record>
+    <menuitem id="chat_root"
+              name ="chat"
+              sequence="7"/>
+    <menuitem id="chat_chatbot_root"
+              name="chatbot"
+              parent="chat_root"
+              sequence="7"/>
+
+</odoo>
